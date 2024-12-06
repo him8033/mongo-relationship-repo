@@ -56,5 +56,11 @@ const addCustomers = async () => {
     console.log(result);
 }
 
+const findCustomers = async() => {
+    let result = await Customer.find({}).populate("orders");
+    console.log(result);
+}
+
 // addOrders();
-addCustomers();
+// addCustomers();
+findCustomers();
