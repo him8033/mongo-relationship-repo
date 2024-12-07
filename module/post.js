@@ -59,7 +59,7 @@ const appData = async () => {
 // appData();
 
 const getData = async() =>{
-    let result = await Post.find({}).populate("user","username");
+    let result = await Post.find({}).populate("user","username");           // if you want only few data then you type their object after declaring ref
     console.log(result);
 }
 
